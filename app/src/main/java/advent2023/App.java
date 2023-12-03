@@ -10,8 +10,8 @@ public class App {
     public static void main(String[] args) {
        getPuzzles()
             .forEach((puzzle) -> {
-                puzzle.part1();
-                puzzle.part2();
+                System.out.println(puzzle.part1());
+                System.out.println(puzzle.part2());
             });
     }
 
