@@ -4,12 +4,12 @@ import java.io.File;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.stream.Stream;
+import java.util.List;
 
 public class Puzzle {
 
     private int day;
-    protected Stream<String> input;
+    protected List<String> input;
 
     public Puzzle(int day) {
         this.day = day;
@@ -29,7 +29,7 @@ public class Puzzle {
         URL resource = classLoader.getResource(String.format("day%d.txt", day));
         File file = new File(resource.getFile());
         try {
-            input = Files.lines(Path.of(file.getPath()));
+            input = Files.lines(Path.of(file.getPath())).toList();
         } catch (Exception e) {
             throw new RuntimeException("Could not read file " + file, e);
         }

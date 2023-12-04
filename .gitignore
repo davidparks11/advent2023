@@ -1,6 +1,8 @@
 .gradle
 **/build/
 !src/**/build/
+app/bin
+.settings\org.eclipse.buildship.core.prefs
 
 # Ignore Gradle GUI config
 gradle-app.setting
