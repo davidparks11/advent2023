@@ -4,6 +4,7 @@ import java.util.stream.Stream;
 
 import advent2023.problems.Puzzle;
 import advent2023.problems.day1.Day1;
+import advent2023.problems.day2.Day2;
 
 public class App {
 
@@ -17,7 +18,8 @@ public class App {
 
     private static Stream<Puzzle> getPuzzles() {
         return Stream.of(
-            new Day1()
+            new Day1(),
+            new Day2()
         );
     }
 
