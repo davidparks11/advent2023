@@ -12,8 +12,8 @@ public class App {
     public static void main(String[] args) {
        getPuzzles()
             .forEach((puzzle) -> {
-                System.out.println(puzzle.part1());
-                System.out.println(puzzle.part2());
+                System.out.printf("Day %d, part %d: %s\n", puzzle.getDay(), 1, puzzle.part1());
+                System.out.printf("Day %d, part %d: %s\n", puzzle.getDay(), 2, puzzle.part2());
             });
     }
 

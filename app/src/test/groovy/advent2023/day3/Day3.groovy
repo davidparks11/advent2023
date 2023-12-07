@@ -24,6 +24,6 @@ class Day3Test extends Specification {
         def output = day.part2()
         
         then:
-        output == null
+        output == 467835
     }
 }

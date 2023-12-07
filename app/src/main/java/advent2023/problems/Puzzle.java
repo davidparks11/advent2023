@@ -24,6 +24,8 @@ public class Puzzle {
         throw new RuntimeException("Not implemented");
     }
 
+    public int getDay() { return day; }
+
     protected void setInput() {
         ClassLoader classLoader = Puzzle.class.getClassLoader();
         URL resource = classLoader.getResource(String.format("day%d.txt", day));
