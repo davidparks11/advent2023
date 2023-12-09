@@ -49,7 +49,7 @@ public class Day1 extends Puzzle {
                         return 0;
                     return (numerics.get(0) - '0') * 10 + numerics.get(numerics.size() - 1) - '0';
                 })
-                .collect(Collectors.summingInt(Integer::valueOf));
+                .collect(Collectors.summingInt(n -> n));
     }
 
     @Override
@@ -86,7 +86,7 @@ public class Day1 extends Puzzle {
 
                     return valueByPosition.get(minIndex) * 10 + valueByPosition.get(maxIndex);
                 })
-                .collect(Collectors.summingInt(Integer::valueOf));
+                .collect(Collectors.summingInt(n -> n));
     }
 }
 

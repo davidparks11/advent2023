@@ -117,7 +117,7 @@ public class Day3 extends Puzzle {
         return gearsByPartNumbers.values().stream()
                 .filter((partsList) -> partsList.size() == 2)
                 .map((partsList) -> partsList.get(0) * partsList.get(1))
-                .collect(Collectors.summingInt(Integer::valueOf));
+                .collect(Collectors.summingInt(n -> n));
     }
 
     private Set<Pair<Integer>> getSurroundingGears(int row, int col, List<String> engineSchematic) {

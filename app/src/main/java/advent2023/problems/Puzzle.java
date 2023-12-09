@@ -24,7 +24,9 @@ public class Puzzle {
         throw new RuntimeException("Not implemented");
     }
 
-    public int getDay() { return day; }
+    public int getDay() {
+        return day;
+    }
 
     protected void setInput() {
         ClassLoader classLoader = Puzzle.class.getClassLoader();
