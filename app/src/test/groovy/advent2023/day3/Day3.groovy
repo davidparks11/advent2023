@@ -1,14 +1,14 @@
 package day3
 
 import spock.lang.Specification
-import advent2023.problems.day2.Day2;
+import advent2023.problems.day3.Day3;
 
-class Day2Test extends Specification {
+class Day3Test extends Specification {
 
-    Day2 day;
+   Day3 day;
 
     def setup() {
-        day = new Day2();
+        day = new Day3();
     }
 
     def "part1"() {
@@ -16,7 +16,7 @@ class Day2Test extends Specification {
         def output = day.part1()
         
         then:
-        output == 8
+        output == 4361
     }
 
     def "part2"() {
@@ -24,6 +24,6 @@ class Day2Test extends Specification {
         def output = day.part2()
         
         then:
-        output == 2286
+        output == 467835
     }
 }
